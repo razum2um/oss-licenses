@@ -21,12 +21,65 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			.col { display: flex; flex-direction: column; }
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>OSS Licenses</h1>
+					<ul>
+						<li>Copyleft VS <s>Copyright</s>Non-copyleft</li>
+						<li>Work VS Hobby</li>
+						<li><a href='https://app.fossa.io/projects/git%2Bgithub.com%2Fwekan%2Fwekan/refs/branch/master/243e4c856ec1d292ac9f243a0cef41b817cfc227/browse/licenses'>Use: Fossa</a></li>
+						<li><a href="https://choosealicense.com/">Produce: choosealicense</a></li>
+					</ul>
+				</section>
+				<section>
+					<h1>Usage</h1>
+					<div class='col'>
+						<div>
+							<h2>Import</h2>
+							<ul>
+								<li>Compiled: LGPG, Apache-2</li>
+								<li>Web/Network: MIT, BSD</li>
+							</ul>
+							<h2>No Import</h2>
+							<ul>
+								<li>Compiled: GPL</li>
+								<li>Web/Network: AGPL</li>
+							</ul>
+						</div>
+						<div>
+							<h2>Use</h2>
+							<ul>
+								<li>Almost everything</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h1>Produce</h1>
+					<div class='col'>
+						<div>
+							<h2>Library</h2>
+							<ul>
+								<li>Do as in ecosystem!</li>
+								<li>Web: MIT (Rails, Express), BSD</li>
+								<li>Web: MIT (Rails, Express), BSD</li>
+							</ul>
+						</div>
+						<div>
+							<h2>Product</h2>
+							<ul>
+								<li>Compiled: LGPL (Qt)</li>
+								<li>Network: AGPL (Neo4j, PeerTube)</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
